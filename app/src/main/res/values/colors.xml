@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bluetransparan">#7000aeff</color>
+    <color name="greytransparan">#63ede8e8</color>
+    <color name="ungutransparan">#a0bb00ff</color>
+    <color name="black">#5a000000</color>
+    <!--menu dasboard-->
+    <color name="bgmenubirudasartrans">#d248d1cc</color>
+    <color name="bgmenuunguviolettrans">#d2ffa500</color>
+    <color name="bgmenubluetrans">#d200aeff</color>
+
+    <color name="red">#B71C1C</color>
+</resources>

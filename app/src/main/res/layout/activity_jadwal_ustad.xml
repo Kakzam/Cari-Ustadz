@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/layout"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/judul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/jadwal_kajian_para_ustad_judul"
+                            android:textColor="@android:color/black"
+                            android:textSize="25sp" />
+
+                        <TableLayout
+                            android:id="@+id/table_judul"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/judul"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="50sp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:text="@string/urutan_nomer_jadwal"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="170sp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:text="@string/Tanggal_Kajian"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="125sp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:text="@string/mulai_kajian"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="125sp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:text="@string/selesai_kajian"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="300dp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="@string/nama_masjid_jadwal"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="@string/provinsi_jadwal"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:paddingLeft="40dp"
+                                    android:paddingRight="40dp"
+                                    android:text="@string/kota_jadwal"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="200dp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/kecamatan_jadwal"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="290dp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:paddingLeft="40dp"
+                                    android:paddingRight="40dp"
+                                    android:text="@string/alamat_jadwal"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:background="@drawable/border_tengah_warna"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="@string/kode_pos_jadwal"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="17sp" />
+
+                            </TableRow>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rc_jadwal_ustad"
+                                android:scrollbars="none"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                        </TableLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

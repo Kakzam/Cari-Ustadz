@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/backds"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_cari"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="3dp"
+        app:civ_circle_background_color="@android:color/white" />
+
+    <TextView
+        android:id="@+id/isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:padding="5dp"
+        android:text="Aplikasi ini adalah aplikasi yang di gunakan untuk memecahkan masalah umat muslim, yaitu masalah untuk mencari tau jatwal-jadwal kajian ustad-ustad di indonesia ini."
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_below="@+id/isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/customdialog_button_ok"
+            android:text="Ok"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

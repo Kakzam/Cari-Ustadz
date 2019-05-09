@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "60311000294",
+    "firebase_url": "https://cari-ustadz-95792.firebaseio.com",
+    "project_id": "cari-ustadz-95792",
+    "storage_bucket": "cari-ustadz-95792.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60311000294:android:61bd044f0f721794",
+        "android_client_info": {
+          "package_name": "id.pondokit.cari_ustadz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60311000294-75bvdjva6rkt36g8dst268p82ad1q6q7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSiOyfOfrrUSypc-hL_QmpMSwlPA1Pe7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60311000294-75bvdjva6rkt36g8dst268p82ad1q6q7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

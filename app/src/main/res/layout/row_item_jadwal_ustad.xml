@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <TableRow
+        android:layout_width="50sp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_urutan_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/urutan_nomer_jadwal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_tanggal_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:text="@string/tanggal_jadwal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_bulan_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:text="@string/bulan_jadwal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="2dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_tahun_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:text="@string/tahun_jadwal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="14dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_jam_awal_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:text="@string/awal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_menit_awal_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:text="@string/awal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_jam_selesai_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:text="@string/awal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=":"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_menit_selesai_row_item_jadwal_ustadz"
+                android:layout_width="wrap_content"
+                android:text="@string/awal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_nama_masjid_row_item_jadwal_ustadz"
+            android:layout_width="300dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/nama_masjid_jadwal"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_provinsi_row_item_jadwal_ustadz"
+            android:layout_width="200dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/provinsi_jadwal"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_kab_kota_row_item_jadwal_ustadz"
+            android:layout_width="200dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/kota_jadwal"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_kecamatan_row_item_jadwal_ustadz"
+            android:layout_width="200dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/kecamatan_jadwal"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_alamat_row_item_jadwal_ustadz"
+            android:layout_width="290dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/alamat_jadwal"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_kode_pos_row_item_jadwal_ustadz"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/kode_pos_jadwal"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </TableRow>
+</TableRow>
+

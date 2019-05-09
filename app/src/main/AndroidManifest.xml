@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cari_ustadz.pondokit.id.cari_ustadz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_cari"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_cari"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".RegistrasiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DasboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".JadwalUstadActivity"
+            android:parentActivityName=".DasboardActivity"/>
+
+        <activity android:name=".ProfileActivity"
+            android:parentActivityName=".DasboardActivity"/>
+
+        <!-- ini manifest bagian Jadwal Shalat -->
+
+        <activity android:name=".activities.PrayerTimesActivity"
+            android:parentActivityName=".DasboardActivity">
+            <meta-data
+                android:name="backtodasboard"
+                android:value="com.example.malaikat.ustadzku.DasboardActivity" />
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name="com.example.malaikat.cari_ustad.activities.WelcomeActivity" -->
+        <!-- android:theme="@style/WelcomeScreenTheme" /> -->
+
+        <activity android:name=".activities.PlaceSelectionActivity" />
+        <activity android:name=".activities.preferences.PreferencesActivity" />
+        <activity android:name=".activities.preferences.ReminderPreferencesActivity" />
+        <activity
+            android:name=".activities.LicencesActivity"
+            android:label="@string/preferences_more_openSource" />
+
+        <service
+            android:name=".services.PrayerTimeReminderService"
+            android:exported="false" />
+        <service
+            android:name=".services.PrayerTimesUpdaterService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".broadcastreceivers.PrayerTimeReminderBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name=".broadcastreceivers.BootCompletedBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".widgetproviders.PrayerTimesHorizontalWidget"
+            android:label="@string/widgets_prayertimes_horizontal_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_prayertimes_horizontal" />
+        </receiver>
+        <receiver
+            android:name=".widgetproviders.PrayerTimesVerticalWidget"
+            android:label="@string/widgets_prayertimes_vertical_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_prayertimes_vertical" />
+        </receiver>
+        <receiver
+            android:name=".widgetproviders.PrayerTimesBigWidget"
+            android:label="@string/widgets_prayertimes_big_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_prayertimes_big" />
+        </receiver>
+
+        <service
+            android:name=".services.WidgetUpdaterService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
